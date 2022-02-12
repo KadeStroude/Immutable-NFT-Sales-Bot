@@ -7,7 +7,7 @@ import utilities as ut
 
 url = "https://api.x.immutable.com/v1/orders?"
 headers = {"Accept": "*/*"}
-payload = {'direction': 'desc', 'status': 'filled', 'buy_token_address': '0xac98d8d1bb27a94e79fbf49198210240688bb1ed'}
+payload = {'direction': 'desc', 'status': 'filled', 'buy_token_address': '0xac98d8d1bb27a94e79fbf49198210240688bb1ed'} # Put in contract address
 
 latest_tx = ""
 posted_tx = ""
@@ -29,11 +29,11 @@ while True:
     Tweet_Text = "'"+NFT_Name+"'"+" was just purchased for "+NFT_Purchase_Price+" ETH by "+NFT_Purchased_By+"\n" "Order ID: "+str(NFT_Txn_Hash)+" #BookGames #VeeFriends"
     print("Latest Tweet:", Tweet_Text)
 
-    consumer_token = ""
-    consumer_secret = ""
-    key = ""
-    secret = ""
-    twitter_username = ""
+    consumer_token = "" # fill in from Twitter Developer API
+    consumer_secret = "" # fill in from Twitter Developer API
+    key = "" # fill in from Twitter Developer API
+    secret = "" # fill in from Twitter Developer API
+    twitter_username = "" # Twitter handle
 
     auth = tweepy.OAuthHandler(consumer_token, consumer_secret)
     try:
@@ -51,7 +51,7 @@ while True:
     except:
         print("Twitter Authentication Error")
 
-    # Should I tweet
+    # Determines whether bot should tweet
 
     if latest_tx == posted_tx:
         print("This has been tweeted already, here: ",  latest_tx)
