@@ -10,7 +10,7 @@ In order to find the relevant Layer 2 contract for your project, [Immutascan.io]
 
 Donations are always appreciated!🙏
 
-Eth Address: 0xc2e54856b0F02E52299573dfd7F4971b275b17a9
+ETH Address: 0xc2e54856b0F02E52299573dfd7F4971b275b17a9
 
 ## Setup 🔧
 
