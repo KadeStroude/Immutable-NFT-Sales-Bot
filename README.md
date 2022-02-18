@@ -26,7 +26,7 @@ The bot provided can run locally, however if you want to use a cloud hosting pla
 
 If you are having any issues with this step, feel free to reach out and I can walk you through it, but in short:
 
-- Create a new Heroku account + app and set the project as a remote branch of your git repo (see [Heroku Remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote))
+- Create a new Heroku account and app. Set the project as a remote branch of your git repo (see [Heroku Remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote))
 
 Now you're ready to release - just push up the code via git to the Heroku remote (see [Heroku Remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote) if unsure how, and if any issues, ensure you are following the [Heroku / Python framework](https://devcenter.heroku.com/articles/getting-started-with-python).
 
