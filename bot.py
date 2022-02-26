@@ -25,10 +25,12 @@ while True:
     NFT_Purchased_By = parse_json["result"][0]["user"]
     NFT_Purchase_Price_API = parse_json["result"][0]["sell"]["data"]["quantity"]
     NFT_Purchase_Price = str(int(NFT_Purchase_Price_API)/1000000000000000000)
-
-    Tweet_Text = "'"+NFT_Name+"'"+" was just purchased for "+NFT_Purchase_Price+" ETH by "+NFT_Purchased_By+"\n" "Order ID: "+str(NFT_Txn_Hash)+" #BookGames #VeeFriends"
+    NFT_Purchase_Price_Rounded = str(round(NFT_Purchase_Price,2))
+    NFT_Purchase_Currency = parse_json["result"][0]["sell"]["type"]
+       
+    Tweet_Text = "'"+NFT_Name+"'"+" was just purchased for "+NFT_Purchase_Price_Rounded+NFT_Purchase_Currency+"\n" "Buyer: "+NFT_Purchased_By+"\n" "https://tokentrove.com/collection/BookGames/imx-"+str(NFT_Txn_Hash)+"?sold=trueOrder"+"\n" "#BookGames #VeeFriends"
     print("Latest Tweet:", Tweet_Text)
-
+    
     consumer_token = "" # fill in from Twitter Developer API
     consumer_secret = "" # fill in from Twitter Developer API
     key = "" # fill in from Twitter Developer API
