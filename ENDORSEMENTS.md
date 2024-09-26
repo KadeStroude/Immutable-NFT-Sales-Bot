@@ -1,4 +1,4 @@
-# Project Endorsements: Gary Vee
+# Endorsement: Gary Vee
 
 In March 2022, a project derived from this code received recognition from none other than Gary Vaynerchuk (Gary Vee), a highly influential entrepreneur and NFT enthusiast. Below are the direct links to the tweets where Gary Vee endorsed it:
 
